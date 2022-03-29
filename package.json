@@ -6,15 +6,15 @@
   "style": "package/stylesheets/liquify.css",
   "files": [
     "LICENSE.md",
-    "package/scripts/{,*/}*.js",
-    "package/styles/{,*/}*.css"
+    "package/scripts/liquify.js",
+    "package/stylesheets/liquify.css"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+\nhttps://github.com/taralloxx/liquify.git"
+    "url": "git+https://github.com/taralloxx/liquify.git"
   },
   "keywords": [
     "css"
