@@ -2,12 +2,12 @@
   "name": "liquify.css",
   "version": "1.0.1",
   "description": "css",
-  "main": "package/scripts/liquify.js",
-  "style": "package/stylesheets/liquify.css",
+  "main": "package/liquify.js",
+  "style": "package/liquify.css",
   "files": [
     "LICENSE.md",
-    "package/scripts/liquify.js",
-    "package/stylesheets/liquify.css"
+    "package/liquify.js",
+    "package/liquify.css"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
