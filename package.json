@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/taralloxx/liquify.git"
+    "url": "git+\nhttps://github.com/taralloxx/liquify.git"
   },
   "keywords": [
     "css"
