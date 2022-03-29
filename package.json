@@ -1,20 +1,14 @@
 {
   "name": "liquify.css",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "css",
-  "main": "package/liquify.js",
-  "style": "package/liquify.css",
-  "files": [
-    "LICENSE.md",
-    "package/liquify.js",
-    "package/liquify.css"
-  ],
+  "main": "liquid.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+\nhttps://github.com/taralloxx/liquify.git"
+    "url": "git+https://github.com/taralloxx/liquify.git"
   },
   "keywords": [
     "css"
@@ -24,8 +18,5 @@
   "bugs": {
     "url": "https://github.com/taralloxx/liquify/issues"
   },
-  "homepage": "https://github.com/taralloxx/liquify#readme",
-  "dependencies": {
-    "liquify.css": "^1.0.0"
-  }
+  "homepage": "https://github.com/taralloxx/liquify#readme"
 }
