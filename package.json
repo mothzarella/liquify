@@ -1,8 +1,13 @@
 {
   "name": "liquify.css",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "css",
-  "main": "liquid.js",
+  "main": "package/liquid.js",
+  "files": [
+    "package/liquid.js",
+    "package/liquid.css",
+    "package/liquid.min.css"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/taralloxx/liquify/issues"
   },
-  "homepage": "https://github.com/taralloxx/liquify#readme"
+  "homepage": "https://github.com/taralloxx/liquify#readme",
+  "dependencies": {
+    "liquify.css": "^1.0.1"
+  }
 }
