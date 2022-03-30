@@ -4,8 +4,7 @@
   "description": "css",
   "main": "package/liquid.js",
   "files": [
-    "package/liquid.js",
-    "package/liquid.css",
+    "package/liquid.min.js",
     "package/liquid.min.css"
   ],
   "scripts": {
@@ -23,8 +22,8 @@
   "bugs": {
     "url": "https://github.com/taralloxx/liquify/issues"
   },
-  "homepage": "https://github.com/taralloxx/liquify#readme",
-  "dependencies": {
-    "liquify.css": "^1.0.2"
-  }
+  "devDependencies": {
+    "jquery": "^3.6.0"
+  },
+  "homepage": "https://github.com/taralloxx/liquify#readme"
 }
