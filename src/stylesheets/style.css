@@ -1,0 +1,57 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background-color: #0f1115;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    height: calc(100% - 3.75rem);
+}
+
+.side {
+    width: 300px;
+    height: 100%;
+    border-color: #161b22;
+    background-color: #0f1115;
+}
+
+.content > main {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    padding: 1.125rem;
+}
+
+.flex-example {
+    background-color: #818cf81a;
+    background-image: linear-gradient(
+            135deg,
+            rgba(var(--priary), 0.5) 10%,
+            transparent 0,
+            transparent 50%,
+            rgba(var(--priary), 0.5) 0,
+            rgba(var(--priary), 0.5) 60%,
+            transparent 0,
+            transparent
+    );
+    background-size: 0.438rem 0.438rem;
+}
+
+.flex-example > .item {
+    padding: 1.125rem;
+    width: 100%;
+    background-color: rgb(var(--priary));
+    border-radius: 0.625rem;
+}

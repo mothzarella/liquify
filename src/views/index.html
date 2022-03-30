@@ -6,16 +6,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="../../package/liquid.min.css">
+    <link rel="stylesheet" href="../../package/liquid.css">
     <link rel="stylesheet" href="../stylesheets/style.css">
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/liquify.css@1.0.3/package/liquid.min.css" rel="stylesheet">
 </head>
 <body>
+
+<div class="dark" liquid-navbar="left">
+    <button class="button:basic" liquid-button>Basic</button>
+    <button class="button:raised" liquid-button>Raised</button>
+    <button class="button:stroked" liquid-button>Stroked</button>
+    <button class="button:flat navbar:right" liquid-button>Flat</button>
+</div>
+<div class="container" liquid-sidenav="side">
+    <div class="side border:right" sidenav id="sideExample">
+        <a href="#p1">
+            <button class="button:flat" liquid-button>Flat</button>
+        </a>
+
+        <div liquid-drop>
+            <button class="button:flat" liquid-button liquid-drop-btn>Dropdown</button>
+            <div liquid-drop-content>
+                <div class="dropdown:title">titolo</div>
+                <a liquid-drop-item>menu item</a>
+                <a href="/" liquid-drop-item>menu link</a>
+                <a liquid-drop-item>menu item</a>
+                <div liquid-drop-nasted>
+                    <a liquid-drop-more>menu more</a>
+                    <div class="nasted:right" liquid-drop-content>
+                        <div class="dropdown:title">titolo</div>
+                        <a href="/" liquid-drop-item>menu link</a>
+                        <a href="/" liquid-drop-item>menu link</a>
+                        <a href="/" liquid-drop-item>menu link</a>
+                        <a href="/" liquid-drop-item>menu link</a>
+                        <hr class="dropdown:separator">
+                    </div>
+                </div>
+                <a liquid-drop-item>menu item</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content" sidenav-content>
+        <main>
+            <!-- <div class="pin_container">
+                <div class="card" style="height: 200px;"></div>
+                <div class="card" style="height: 120px;"></div>
+                <div class="card" style="height: 240px;"></div>
+                <div class="card" style="height: 160px;"></div>
+                <div class="card" style="height: 80px;"></div>
+                <div class="card" style="height: 200px;"></div>
+                <div class="card" style="height: 280px;"></div>
+            </div> -->
+            <button liquid-button class="button:flat" bgColor="red" liquid-tooltip-content="libellula" liquid-tooltip="tlq">1</button>
+            <button liquid-button class="button:flat" liquid-tooltip-content="ornitologo" liquid-tooltip="tlq">1</button>
+            <section style="display: flex; gap: 10px">
+                <button liquid-button class="button:flat" liquid-tooltip-content="luca" liquid-tooltip="tlq">1</button>
+                <button liquid-button class="button:flat" liquid-tooltip-content="lol" liquid-tooltip="tlq">1</button>
+            </section>
+            <div class="liquid-block"
+                 liquid-video="https://server8.streamingaw.online/DDL/ANIME/TenseiShitaraSlimeDattaKen/TenseiShitaraSlimeDattaKen_Ep_10_SUB_ITA.mp4">
+            </div>
+
+            <div class="liquid-block flex-example row gap:6">
+                <div class="item col">1/4</div>
+                <div class="item col-md:8">2/4</div>
+                <div class="item col">3/4</div>
+                <div class="item col">4/4</div>
+                <!-- <div class="col"><button class="button:basic" color="primary" toggle-sidenav="sideExample">Open side</button></div> -->
+            </div>
+            <button class="button:basic" liquid-button>Basic</button>
+
+            <div liquid-textarea="autoresize" class="liquid-block" placeholder="lol">textarea</div>
+
+            <section class="liquid-block">
+                <input type="checkbox" class="input:switch" />
+                <input type="checkbox" class="input:checkbox" />
+                <input type="checkbox" class="input:checkbox" liquid-indeterminate />
+                <input type="radio" class="input:radio" name="radio" checked />
+                <input type="radio" class="input:radio" name="radio" />
+            </section>
+
+            <form class="liquid-block form:outline">
+                <input class="input" type="text" autocomplete="off" placeholder="email">
+                <label class="label" for="email">Email</label>
+            </form>
+
+            <form class="liquid-block form:filled">
+                <input type="text" id="email" class="input" autocomplete="off" placeholder="email">
+                <label for="email" class="label">Email</label>
+            </form>
+
+            <h3>Driver</h3>
+            <section class="liquid-block">
+                <hr liquid-driver="horizontal">
+                <section style="height: 200px;">
+                    <hr liquid-driver="vertical">
+                </section>
+                <hr liquid-driver="icon">
+            </section>
+
+            <!-- <button class="button:raised tooltip:up" color="primary" liquid-tooltip="test">lol</button> -->
+
+            <div class="screen" id="p1">
+                <img width="300" height="200" placeholder="size" liquid-src="https://picsum.photos/250/200">
+                <img width="300" height="200" placeholder="spin" liquid-src="https://picsum.photos/251/200">
+                <img width="300" height="200" placeholder="image" liquid-src="https://picsum.photos/252/200">
+                <img width="300" height="200" placeholder="spin" liquid-src="https://picsum.photos/253/200">
+                <img width="300" height="200" placeholder="spin" liquid-src="https://picsum.photos/254/200">
+                <img width="300" height="200" placeholder="spin" liquid-src="https://picsum.photos/255/200">
+                <img width="300" height="200" placeholder="spin" liquid-src="https://picsum.photos/256/200">
+                <img width="300" height="200" placeholder="spin" liquid-src="https://picsum.photos/257/200">
+                <img width="300" height="200" placeholder="spin" liquid-src="https://picsum.photos/258/200">
+                <img width="300" height="200" placeholder="spin" liquid-src="https://picsum.photos/259/200">
+                <img width="400" height="300" placeholder="size" liquid-src="https://picsum.photos/260/200">
+                <img width="300" height="200" placeholder="spin" liquid-src="https://picsum.photos/261/200">
+                <img width="300" height="200" placeholder="spin" liquid-src="https://picsum.photos/262/200">
+                <img width="300" height="200" placeholder="spin" liquid-src="https://picsum.photos/263/200">
+                <img width="300" height="200" placeholder="spin" liquid-src="https://picsum.photos/264/200">
+                <img width="300" height="200" placeholder="spin" liquid-src="https://picsum.photos/265/200">
+                <img width="300" height="200" placeholder="spin" liquid-src="https://picsum.photos/266/200">
+                <img width="300" height="200" placeholder="spin" liquid-src="https://picsum.photos/267/200">
+                <img width="300" height="200" placeholder="spin" liquid-src="https://picsum.photos/268/200">
+                <img width="300" height="200" placeholder="spin" liquid-src="https://picsum.photos/269/200">
+                <img width="300" height="200" placeholder="spin" liquid-src="https://picsum.photos/270/200">
+                <img width="300" height="200" placeholder="spin" liquid-src="https://picsum.photos/271/200">
+                <img width="300" height="200" placeholder="spin" liquid-src="https://picsum.photos/272/200">
+                <img width="300" height="200" placeholder="spin" liquid-src="https://picsum.photos/273/200">
+                <img width="300" height="200" placeholder="spin" liquid-src="https://picsum.photos/274/200">
+            </div>
+
+            <h1>Packery</h1>
+        </main>
+    </div>
+</div>
     
     <script>
         const dirname = "../../liquid.config.json" //json
     </script>
-    <script src="../../package/liquid.min.js"></script>
+    <script src="../../package/liquid.js"></script>
 </body>
 </html>
